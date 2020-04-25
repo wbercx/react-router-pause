@@ -33,16 +33,14 @@
     "not op_mini all"
   ],
   "peerDependencies": {
+    "lodash": "^4.17.11",
     "prop-types": ">=15",
     "react": ">=15",
     "react-dom": ">=15",
     "react-router-dom": ">=4"
   },
-  "dependencies": {
-    "@allpro/form-manager": "^0.5.3",
-    "lodash": "^4.17.11"
-  },
   "devDependencies": {
+    "@allpro/form-manager": "^0.5.3",
     "@svgr/rollup": "^2.4.1",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.5",
@@ -69,7 +67,7 @@
     "rollup-plugin-babel": "^3.0.7",
     "rollup-plugin-commonjs": "^9.3.4",
     "rollup-plugin-node-resolve": "^4.2.3",
-    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.2",
     "rollup-plugin-postcss": "^2.0.3",
     "rollup-plugin-size-snapshot": "^0.8.0",
     "rollup-plugin-terser": "^4.0.4",
