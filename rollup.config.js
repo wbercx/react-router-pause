@@ -7,7 +7,6 @@ import url from 'rollup-plugin-url'
 import svgr from '@svgr/rollup'
 import { sizeSnapshot } from 'rollup-plugin-size-snapshot'
 import { terser } from 'rollup-plugin-terser'
-import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 
 import pkg from './package.json'
 
@@ -18,7 +17,6 @@ const globals = {
 }
 
 const basePlugins = [
-	peerDepsExternal(),
 	// List external libraries that should not be bundled
 	external(),
 	postcss({
@@ -27,6 +25,7 @@ const basePlugins = [
 	url(),
 	svgr(),
 	babel({
+		externalHelpers: true,
 		exclude: 'node_modules/**',
 		plugins: ['external-helpers']
 	}),
