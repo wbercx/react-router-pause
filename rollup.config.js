@@ -25,7 +25,6 @@ const basePlugins = [
 	url(),
 	svgr(),
 	babel({
-		externalHelpers: true,
 		exclude: 'node_modules/**',
 		plugins: ['external-helpers']
 	}),
