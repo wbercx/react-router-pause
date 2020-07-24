@@ -7,7 +7,6 @@ node_modules
 # builds
 build
 cjs
-esm
 umd
 .rpt2_cache
 
